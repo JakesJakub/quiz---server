@@ -1,5 +1,11 @@
 radio.set_group(150)
+odpovedi = [65, 66, 67, 68]
+cislo = 0
 
+hlasy = [{"serials": control.device_serial_number(), "vote": cislo}]
+print(hlasy)
+
+znak = String.from_char_code(cislo + 65)
 prijima = 0
 
 def on_received_value(name, value):
