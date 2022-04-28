@@ -1,5 +1,20 @@
 radio.set_group(150)
 
+prijima = 0
+
 def on_received_value(name, value):
-    pass
+    if prijima == 1:
+        radio.send_number(control.device_serial_number())
 radio.on_received_value(on_received_value)
+
+def on_button_pressed_a():
+    global prijima
+    prijima += 1
+    if prijima == 1:
+        basic.show_icon(IconNames.YES)
+    else:
+        basic.show_icon(IconNames.NO)
+        
+    if prijima > 1:
+        prijima -= 2
+input.on_button_pressed(Button.A, on_button_pressed_a)
