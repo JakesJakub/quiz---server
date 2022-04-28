@@ -1,5 +1,4 @@
 radio.setGroup(150)
-let odpovedi = [65, 66, 67, 68]
 let cislo = 0
 let hlasy = [ {
     "serials" : control.deviceSerialNumber(),

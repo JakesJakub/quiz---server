@@ -1,5 +1,4 @@
 radio.set_group(150)
-odpovedi = [65, 66, 67, 68]
 cislo = 0
 
 hlasy = [{"serials": control.device_serial_number(), "vote": cislo}]
