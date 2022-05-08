@@ -11,8 +11,6 @@ B = 0
 C = 0
 D = 0
 
-znak = String.from_char_code(odpoved + 65)
-
 def on_received_value(name, value):
     global A, B, C, D
     if prijima == 1:

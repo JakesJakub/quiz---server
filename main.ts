@@ -10,7 +10,6 @@ let A = 0
 let B = 0
 let C = 0
 let D = 0
-let znak = String.fromCharCode(odpoved + 65)
 radio.onReceivedValue(function on_received_value(name: string, value: number) {
     
     if (prijima == 1) {
